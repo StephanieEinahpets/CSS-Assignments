@@ -12,7 +12,7 @@ body {
 
 .container {
   display: flex;
-  height: 94vh; /* Full height of the screen */
+  height: 94vh;
 }
 
 .navbar {
@@ -45,12 +45,12 @@ li a:hover {
 }
 
 .hero {
-  flex: 1; /* or width: 50% */
+  flex: 1;
   background: url("../assets/hero-placeholder-cpy.jpeg") center/cover no-repeat;
 }
 
 .form-section {
-  flex: 1; /* or width: 50% */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,5 +91,5 @@ button:hover {
 form {
   display: flex;
   flex-direction: column;
-  align-items: center; /* This centers all form children horizontally */
+  align-items: center;
 }
