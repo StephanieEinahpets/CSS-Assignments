@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  height: 94vh; /* Full height of the screen */
+}
+
+.navbar {
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 55px;
+}
+
+.logo img {
+  height: 45px;
+  padding-top: 3px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li a:hover {
+  color: #c87fdc;
+}
+
+.hero {
+  flex: 1; /* or width: 50% */
+  background: url("../assets/hero-placeholder-cpy.jpeg") center/cover no-repeat;
+}
+
+.form-section {
+  flex: 1; /* or width: 50% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+h3 {
+  text-align: center;
+  font-weight: lighter;
+  padding-bottom: 6%;
+  font-family: "Roboto Mono", monospace;
+}
+
+input {
+  margin-bottom: 2%;
+  padding: 3px;
+}
+
+button {
+  padding: 2px 4px;
+  margin-top: 1%;
+  background-color: #1a1a2e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  align-self: center;
+  font-weight: lighter;
+}
+
+button:hover {
+  background-color: #c87fdc;
+  color: #1a1a2e;
+  border-color: #c87fdc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* This centers all form children horizontally */
+}
