@@ -1,0 +1,108 @@
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("../assets/background.webp") no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  color: #333;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.65);
+  max-width: 40%;
+  margin: 80px auto 40px;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  color: #1a1a2e;
+}
+
+form h5 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: white;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+}
+
+form fieldset {
+  border: 1px solid #aaa;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.contact {
+  width: 100%;
+}
+
+.contact input[type="radio"] {
+  margin-left: 2vw;
+}
+
+.destinations input[type="checkbox"] {
+  margin-right: 0px;
+  padding-right: 0px;
+  margin-left: 0.53vw;
+}
+
+form input[type="submit"] {
+  background-color: #5d90a6;
+  color: #1a1a2e;
+  border: none;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #1a1a2e;
+  color: white;
+  border: 2px solid #5d90a6;
+  font-weight: bold;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ac8a78;
+  border-top: 1px solid #ccc;
+  font-size: 10px;
+  padding: 4px 12px;
+  color: #ccc;
+  font-family: monospace;
+}

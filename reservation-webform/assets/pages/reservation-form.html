@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make a Reservation</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/form-style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="../index.html"><img src="../assets/logo.png" /></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html" class="active">Home</a></li>
+        <li><a href="./reservation-form.html">Book</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form action="https://httpbin.org/post" method="post">
+        <h5>Reserve Your Trip</h5>
+        <div>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your full name"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="(123)‑456‑7890"
+          />
+        </div>
+        <div>
+          <label for="bday">Birthday</label>
+          <input id="bday" name="bday" type="date" /><br /><br />
+        </div>
+
+        <fieldset class="contact">
+          <legend>Preferred Contact</legend>
+          <input
+            id="pref-contact"
+            name="pref-contact"
+            type="radio"
+            value="Email"
+            checked
+          />
+          <label for="pref-email">Email</label>
+          <input
+            id="pref-phone"
+            name="pref-contact"
+            type="radio"
+            value="Phone"
+          />
+          <label for="pref-phone">Phone</label>
+        </fieldset>
+
+        <fieldset class="destinations">
+          <legend>Destination(s) of interest</legend>
+          <input id="paris" name="destination" type="checkbox" value="paris" />
+          <label for="paris">Paris</label>
+          <input
+            id="london"
+            name="destination"
+            type="checkbox"
+            value="london"
+          />
+          <label for="london">London</label>
+          <input
+            id="newyork"
+            name="destination"
+            type="checkbox"
+            value="newyork"
+          />
+          <label for="newyork">New York</label>
+          <input id="tokyo" name="destination" type="checkbox" value="tokyo" />
+          <label for="tokyo">Tokyo</label>
+          <input id="nepal" name="destination" type="checkbox" value="nepal" />
+          <label for="nepal">Nepal</label>
+          <input id="other" name="destination" type="checkbox" value="other" />
+          <label for="other">Other</label>
+        </fieldset>
+        <div>
+          <label for="region">Your Region</label>
+          <select id="region" name="region">
+            <option value="" selected disabled>Select one…</option>
+            <option value="NA">North America</option>
+            <option value="EU">Europe</option>
+            <option value="ME">Middle East</option>
+            <option value="AP">Asia‑Pacific</option>
+            <option value="AF">Africa</option>
+            <option value="LA">Latin America</option>
+          </select>
+        </div>
+
+        <label for="dates">Travel Dates</label>
+        <input
+          type="text"
+          id="dates"
+          name="dates"
+          placeholder="e.g., July 10 - July 20"
+          required
+        />
+        <div>
+          <label for="notes">Additional Notes</label>
+          <textarea
+            id="notes"
+            name="notes"
+            rows="4"
+            placeholder="Let us know anything else..."
+          ></textarea>
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+
+    <footer>
+      <div class="footer-left">
+        © 2025 Reservations Inc. All rights reserved.
+      </div>
+      <div class="footer-contact">
+        123 Street, Some City, USA | (123) 456-7890 | reservations@email.com
+      </div>
+    </footer>
+  </body>
+</html>

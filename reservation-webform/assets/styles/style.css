@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  color: #333;
+  background-color: rgb(252, 214, 220);
+  height: 100vh;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1a1a2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 7vh 0 3vh;
+  padding-top: 3px;
+}
+
+.logo img {
+  height: 45px;
+}
+
+.logo img:hover {
+  height: 47px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 7vh;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+li a:hover {
+  color: #a2e9ea;
+}
+
+.button-container {
+  margin-top: 35px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px 50px 50px;
+
+  min-height: calc(100vh - 70px);
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.hero-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.hero-button {
+  padding: 10px 20px;
+  background-color: #1a1a2e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero-button:hover {
+  background-color: #a2e9ea;
+  color: #1a1a2e;
+  border: 1.5px solid #ea77cb;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(252, 214, 220);
+  border-top: 1px solid #ccc;
+  font-size: 10px;
+  padding: 4px 12px;
+  color: lightslategray;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-contact {
+  text-align: right;
+  padding-top: 7px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .hero-content,
+  .hero-image {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
